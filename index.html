@@ -1,87 +1,113 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kritisch denken im KI-Zeitalter</title>
-    <style>
-      body {
-        font-family: sans-serif;
-        background: #f8f8f8;
-        margin: 0;
-        padding: 0;
-      }
-      .container {
-        max-width: 960px;
-        margin: 2em auto;
-        padding: 1em;
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      }
-      h1 {
-        font-size: 2em;
-        margin-bottom: 0.5em;
-      }
-      h2 {
-        font-size: 1.5em;
-        margin-top: 2em;
-      }
-      iframe {
-        border: none;
-      }
-      .embed-container {
-        position: relative;
-        width: 100%;
-        height: 0;
-        padding-top: 141.4286%;
-        box-shadow: 0 2px 8px rgba(63, 69, 81, 0.16);
-        margin: 1.6em 0 0.9em;
-        overflow: hidden;
-        border-radius: 8px;
-        will-change: transform;
-      }
-      .embed-container iframe {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-      }
-      a {
-        color: #0066cc;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Kritisch denken im KI-Zeitalter</h1>
-      <p>Willkommen auf der Begleitseite zur Vertiefungsarbeit.</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kritisch denken im KI-Zeitalter</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: #f8f8f8;
+      padding: 2em;
+      color: #222;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 2em;
+    }
+    h1 {
+      text-align: center;
+    }
+    .nav {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      margin: 2em 0;
+    }
+    .nav button {
+      font-size: 1em;
+      padding: 0.8em 1.2em;
+      border: none;
+      background: #0066cc;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: left;
+    }
+    .nav button:hover {
+      background: #0055a5;
+    }
+    .section {
+      display: none;
+      margin-top: 2em;
+    }
+    .embed-container {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-top: 141.4286%;
+      margin-top: 1em;
+      box-shadow: 0 2px 8px rgba(63, 69, 81, 0.16);
+      overflow: hidden;
+      border-radius: 8px;
+    }
+    .embed-container iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Kritisch denken im KI-Zeitalter</h1>
+    <p>Willkommen auf der Begleitseite zur Vertiefungsarbeit.</p>
 
-      <h2>Kriterien und Empfehlungen für die Unterrichtsgestaltung</h2>
+    <div class="nav">
+      <button onclick="toggle('empfehlungen')">Kriterien und Empfehlungen</button>
+      <button onclick="toggle('unterricht')">Exemplarische Unterrichtssequenz</button>
+      <button onclick="toggle('quellen')">Literaturquellen zur Vertiefung</button>
+      <button onclick="toggle('pdf')">Druckfreundliches PDF</button>
+    </div>
+
+    <div id="empfehlungen" class="section">
       <div class="embed-container">
         <iframe loading="lazy" src="https://www.canva.com/design/DAGk5DjDC1s/VYOjCBDExt7ElXIoHsbPXg/view?embed" allowfullscreen></iframe>
       </div>
-      <p><a href="https://www.canva.com/design/DAGk5DjDC1s/VYOjCBDExt7ElXIoHsbPXg/view?utm_content=DAGk5DjDC1s&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Direkt in Canva öffnen</a> – von Patric Scheurer</p>
+    </div>
 
-      <h2>Exemplarische Unterrichtssequenz</h2>
+    <div id="unterricht" class="section">
       <div class="embed-container">
         <iframe loading="lazy" src="https://www.canva.com/design/DAGlkHyhe8E/y5nbUqZIzOUg6tpgw7ftnw/view?embed" allowfullscreen></iframe>
       </div>
-      <p><a href="https://www.canva.com/design/DAGlkHyhe8E/y5nbUqZIzOUg6tpgw7ftnw/view?utm_content=DAGlkHyhe8E&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Design öffnen</a> – von Patric Scheurer</p>
+    </div>
 
-      <h2>Literaturliste zur weiteren Vertiefung</h2>
+    <div id="quellen" class="section">
       <div class="embed-container">
         <iframe loading="lazy" src="https://www.canva.com/design/DAGlkDpoMt4/ifV4F3DcTd1G018g7LWnmw/view?embed" allowfullscreen></iframe>
       </div>
-      <p><a href="https://www.canva.com/design/DAGlkDpoMt4/ifV4F3DcTd1G018g7LWnmw/view?utm_content=DAGlkDpoMt4&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Quellen öffnen</a> – von Patric Scheurer</p>
-
-      <h2>Handout zum Ausdrucken (PDF)</h2>
-      <p>➡️ <em>Diese Datei folgt in Kürze…</em></p>
     </div>
-  </body>
+
+    <div id="pdf" class="section">
+      <p>Das druckfreundliche PDF mit Kriterien und Unterrichtssequenz folgt in Kürze.</p>
+    </div>
+  </div>
+
+  <script>
+    function toggle(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(sec => {
+        sec.style.display = sec.id === id ? 'block' : 'none';
+      });
+    }
+  </script>
+</body>
 </html>
